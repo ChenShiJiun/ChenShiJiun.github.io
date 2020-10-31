@@ -1,81 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" id="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
-<title>muban</title>
-<style type="text/css">
-.wrap{
-	width:100%;
-	max-width:1000px;
-	margin:0 auto;
-	}
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
 
-.pic01{
-	display:block;
-	float:left;
-	margin-bottom:20px;
-	}
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
 
-.news_kuang{
-	width:75%;
-	float:left;
-	}
+    Fore more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+  -->
+  <base href="/">
 
-.news_kuang h3{
-	padding-left:10px;
-	line-height:1.2em;
-	font-size:1.4em;
-	word-break:keep-all;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-	}
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="My 1st Flutter application.">
 
-.news_kuang .date{
-	margin-top:20px;
-	text-align:right;
-	font-size:0.9em;
-	}
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="my_1st_flutter_app">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-.text01{
-	width:95%;
-	clear:both;
-	margin:0 auto;
-	margin-bottom:20px;
-	}
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
 
-.text01 p,.text02 p{
-	text-indent:2em;
-	line-height:1.5em;
-	text-align:justify;
-	font-size:0.9em;
-	}
-
-.text02{
-	width:74%;
-	float:left;
-	box-sizing:border-box;
-	padding-left:10px;
-	color:#666;
-	}
-	
-</style>
-<link href="css/Reset.css" rel="stylesheet" type="text/css">
+  <title>my_1st_flutter_app</title>
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
-<div class="wrap">
-<img src="images/01.jpg" width="24%" height="auto" class="pic01">
-<div class="news_kuang">
-	<h3>太歲紀年東都明京小說發售中</h3>
-    <p class="date">2017/08/01</p>
-</div>
-<div class="text01">
-<p>
-    人氣急速竄升中的府城少女歲星星小說特裝版發售中！內含當紅作家壹一撰寫的小說、CD，還有人氣繪師Kaworu, 亞果老師繪製的首刷限定卡片喔～<br><br>大家快點到博客搶購吧 - <a href="https://goo.gl/Xocj5x">https://goo.gl/Xocj5x</a>
-</p>
-</div>
-<a href="https://goo.gl/Xocj5x"><img src="images/02.jpg" width="100%" height="auto" class="pic01"></a>
-</div>
+  <!-- This script installs service_worker.js to provide PWA functionality to
+       application. For more information, see:
+       https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1521911713');
+      });
+    }
+  </script>
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
