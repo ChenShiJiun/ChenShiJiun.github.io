@@ -15,18 +15,18 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="My 1st Flutter application.">
+  <meta name="description" content="A new Flutter application.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="my_1st_flutter_app">
+  <meta name="apple-mobile-web-app-title" content="flutter_piggybank">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>my_1st_flutter_app</title>
+  <title>flutter_piggybank</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -36,10 +36,32 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=1521911713');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3731985351');
       });
     }
   </script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyBIPKDMYSj44ZqG_pugvZrtsxMZVp2XfwU",
+      authDomain: "savemoney-a1ac5.firebaseapp.com",
+      databaseURL: "https://savemoney-a1ac5.firebaseio.com",
+      projectId: "savemoney-a1ac5",
+      storageBucket: "savemoney-a1ac5.appspot.com",
+      messagingSenderId: "915537909398",
+      appId: "1:915537909398:web:e83eda7a7c9909d7f2d4b7",
+      measurementId: "G-6RCM3SYHWZ"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
   <script src="main.dart.js" type="application/javascript"></script>
+
 </body>
 </html>

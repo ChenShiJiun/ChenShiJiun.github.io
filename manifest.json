@@ -1,11 +1,11 @@
 {
-    "name": "my_1st_flutter_app",
-    "short_name": "my_1st_flutter_app",
+    "name": "flutter_piggybank",
+    "short_name": "flutter_piggybank",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "My 1st Flutter application.",
+    "description": "A new Flutter application.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
